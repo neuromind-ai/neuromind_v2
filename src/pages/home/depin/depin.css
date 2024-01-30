@@ -4,6 +4,12 @@
     background: radial-gradient(circle, rgba(17, 60, 57, 1) 0%, rgba(1, 2, 19, 1) 50%);
     padding-bottom: 10rem;
 }
+.depin_main_container .depin_effort{
+    text-align: center;
+    padding: 8rem 2rem 0rem 2rem;
+    font-size: 2rem;
+    opacity: 0.7;
+}
 
 .text {
    display: flex;
@@ -45,7 +51,7 @@
 .content_1 .svg_1 p{
     background: #2e2a4e;
     height: 72px;
-    width: 5vw;
+    width: 92px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -191,7 +197,7 @@ table {
 
 th, td {
     border-bottom: 1px solid #ddd;
-    padding: 8px;
+    padding: 7px;
     text-align: left;
     white-space: nowrap;
 }
@@ -230,9 +236,9 @@ tr:last-child td {
 .svg-container-1 {
     z-index: 1;
     top: 194px;
-    width: 86px;
+    width: 98px;
     height: 27px;
-    padding-right: 2rem;
+    padding-right: 3.2rem;
     position: relative;
     animation: moveArrow 2s linear infinite;/* Adjust the duration and timing function as needed */
   }
@@ -251,6 +257,9 @@ tr:last-child td {
   }
 
   @media (max-width:750px) {
+    .depin_main_container .depin_effort{
+        font-size: 1.5rem;
+    }
     
     .three_content{
         display: flex;
@@ -261,21 +270,29 @@ tr:last-child td {
     }
   
     .content_1{
-        width: 83%;
+        width: 100%;
 
     }
     .content_1 .svg_container_1{
         flex-direction: row;
+        gap: 8px;
     }
     .content_1 .svg_container_2{
         flex-direction: row;
+        gap: 8px;
+    }
+    .sub_content_1{
+        justify-content: center;
+        height: 130px;
+        width: fit-content;
     }
     .svg_content_1{
         flex-direction: row;
+        
     }
     .three_content .svg_1 p{
         height: 72px;
-        width: 17vw;
+        width: 92px;
     }
     .content_2{
         background-color: transparent;
@@ -283,6 +300,7 @@ tr:last-child td {
     }
     .table_content{
         padding: 1rem;
+        min-width: 364px;
     }
     table{
         height: 220px;
@@ -304,6 +322,7 @@ tr:last-child td {
         padding-right: 2rem;
         position: relative;
         animation: moveArrow 2s linear infinite;/* Adjust the duration and timing function as needed */
+        padding-bottom: 7rem;
       }
       
       /* Define the animation keyframes */
@@ -320,3 +339,4 @@ tr:last-child td {
       }
     
   }
+  

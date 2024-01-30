@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7rem 4rem 13rem 4rem;
+    padding-top: 10rem;
     background: radial-gradient(48.25% 49.9% at 50.35% 50.1%,rgb(17, 60, 57,.4) 50%,#010213 100%);
     transition: padding-top 0.5s ease;
    
@@ -28,9 +28,12 @@
 .first_part_text span{
     font-size: 5rem;
     text-align: center;
-    letter-spacing: 3.5px;
+    /* letter-spacing: 3.5px; */
     white-space: nowrap;
     transition: font-size 0.8s ease;
+    font-weight: 700;
+
+    
 }
 .first_part_text p{
     font-size: 1.6rem;
@@ -60,7 +63,7 @@
     /* z-index: -1000; */
     transform-origin: center;
     transition: transform 0.8s ease;
-    width: 100%;
+    width: 75%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -133,7 +136,10 @@
     opacity: 0.4;
     }
     .first_part{
-        padding: 15rem 2rem 19rem 2rem;
+        padding-top: 14rem;
+    padding-bottom: 14rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     }
     .first_part_text{
         padding-top: 5rem;
@@ -143,6 +149,7 @@
     }
     .first_part p{
         font-size: 1rem;
+        text-align: center;
     }
     .first_part button{
         padding: 0.7rem;
@@ -168,13 +175,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 11rem 17rem;
+      padding: 11rem 12rem;
     justify-content: center;
   }
   .second_container_text{
     font-size: min(4vw,55px);
     font-weight: 700;
     text-align: center;
+  }
+  .depin_effort{
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    opacity: 0.8;
   }
   @media (max-width:750px) {
     .second_container{
@@ -192,7 +204,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 4rem 12rem 4rem;
+    padding: 2rem 4rem 12rem 4rem;
     gap: 6rem;
     background:url("https://blockflow.network/wire.svg");
     background-position: center;
@@ -234,14 +246,13 @@
 .Third_card ul {
     color: black;
     list-style: none;
-    padding: 0;
     row-gap: 1rem;
     column-gap: 36px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 3rem 15rem;
 
     
 }
@@ -253,12 +264,12 @@
 
 .Third_card li {
     
-    width: 35%;
+    width: 46%;
     height: 170px;
     opacity: 0.8;
     background: white;
     gap: 1rem;
-    padding: 2rem;
+    padding: 0px 40px;
     display: flex;
     flex-direction: column;
     border-radius: 3px ;
@@ -268,8 +279,10 @@
      
 }
 .Third_card li p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
+    letter-spacing: -1px;
+
 }
 
 /* Highlight color for the elevated text */
@@ -398,6 +411,7 @@
     padding: 1rem 2rem;
     border-radius: 25px;
     font-size: 1rem;
+    border: 1px solid white;
  }
 
  @media (max-width:750px) {
@@ -412,6 +426,10 @@
     .contact_text{
         text-align: center;
     }
+    .contact_form input{
+        min-width: 7rem;
+    }
+    
     
  }
 
@@ -430,7 +448,7 @@
     gap: 3rem;
  }
  .social_account a{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     border: 1px solid white;
     padding: 1rem;
     border-radius: 50%;
@@ -513,6 +531,9 @@
     .message_email{
         flex-direction: column;
         padding: 5rem 2rem;
+    }
+    .message_email p:first-child{
+        font-size: 1.5rem;
     }
     .social_account{
         gap: 2rem;

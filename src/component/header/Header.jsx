@@ -21,10 +21,11 @@ const Header = () => {
                     </div>
                     <div className="header_content">
                         <ul className='header_list_container'>
+                            <li><a href="#neuromind-team">About us</a></li>
                             <li><a href="">doc</a></li>
                             <li><a href="">blog</a></li>
                             {/* <li><Link to="/pricing">pricing</Link></li> */}
-                            <li><Link to="/contact">contact us</Link></li>
+                            <li><a href="#contact">contact us</a></li>
                         </ul>
 
                     </div>

@@ -9,6 +9,7 @@ import { MdOutlineUnsubscribe } from "react-icons/md";
 import { motion } from 'framer-motion';
 import data from './/thirdcontainer.json'
 import Depin from './depin/Depin';
+import Team from './team/Team'
 
 
 
@@ -47,16 +48,16 @@ const Home = () => {
         });
     };
 
-    
+
 
     return (
         <>
             {/* // <ContentWrapper> */}
 
-         
-                <div className="first_part">
-                    <div className="first_part_hexagon">
-                        <div className="align_center">
+
+            <div className="first_part">
+                <div className="first_part_hexagon">
+                    <div className="align_center">
 
                         <div class="first_hexagon"></div>
                         <div className="first_two_hexagon">
@@ -64,43 +65,50 @@ const Home = () => {
                             <div class="first_hexagon"></div>
 
                         </div>
-                        </div>
+                    </div>
 
-                    </div>
-                    <div className="first_part_text">
-                        <span> Modular Orchestration,
-                            <br />
-                            Protocol For AI Networks</span>
-                        <p>Empowering AI communities with decentralised staking infrastructure </p>
-                        <button>request demo</button>
-                    </div>
                 </div>
-              
+                <div className="first_part_text">
+                    <span> Modular Orchestration,
+                        <br />
+                        Protocol For AI Networks</span>
+                    <p>Empowering AI communities with decentralised staking infrastructure </p>
+                    <a style={{ color: "inherit", textDecoration: "none" }} href="#request_demo"> <button style={{ cursor: "pointer" }}> request demo</button></a>
+                </div>
+            </div>
+
             <div className="second_container">
-                    <p className='second_container_text'>Let <span style={{ color: "#D2926E" }}> Neuromind</span>  guide you in spinning up nodes for AI Projects (DePIN)</p>
-                    <Depin/>
+                <p className='second_container_text'>Let <span style={{ color: "#D2926E" }}> Neuromind</span>  guide you in spinning up nodes for AI Projects (DePIN)</p>
+                <p className='depin_effort'>Effortlessly navigate risk-adjusted exposure to AI projects</p>
+                <Depin />
 
-                </div>
+            </div>
             <div className="Third_container">
                 <div className="Third_content">
                     <div className="Third_headText">
                         How neuromind can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
                         {/* */}your <br />
-                       your DePIN yield?
+                        your DePIN yield?
                     </div>
                 </div>
                 <div className="Third_card">
                     <ul>
                         {data.map((obj) => (
                             <li key={obj.id}>
-                               {/* <p className='first_child'>{obj.name}</p>   */}
-                               <p>{obj.description}</p> 
+                                {/* <p className='first_child'>{obj.name}</p>   */}
+                                <p>{obj.description}</p>
                             </li>
                         ))}
                     </ul>
                 </div>
             </div>
-            <motion.div className="home_contact_container"
+            <div id='neuromind-team'>
+                <div className="our_team">
+
+                    <Team />
+                </div>
+            </div>
+            <motion.div id="request_demo" className="home_contact_container"
 
             >
                 <div className="contact_text">
@@ -138,10 +146,10 @@ const Home = () => {
 
                 </div>
             </motion.div>
-            <div className="social_media_container">
+            <div id="contact" className="social_media_container">
                 <div className="social_account">
                     {/* Twitter */}
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/neuromind_ai" target="_blank" rel="noopener noreferrer">
                         <FaTwitter />
                     </a>
 
@@ -149,16 +157,16 @@ const Home = () => {
                     <a href="https://www.discord.com" target="_blank" rel="noopener noreferrer">
                         <FaDiscord />
                     </a>
-                  
+
 
                     {/* Telegram */}
                     <a href="https://t.me" target="_blank" rel="noopener noreferrer">
                         <BiLogoTelegram />
                     </a>
 
-                  
+
                     {/* LinkedIn */}
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/mayank-mahawar-46032a4b/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedinIn />
 
                     </a>
@@ -207,6 +215,7 @@ const Home = () => {
                 </div>
 
             </div> */}
+
             {/* </ContentWrapper > */}
         </>
     )

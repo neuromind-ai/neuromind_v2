@@ -70,7 +70,7 @@ export default function Depin() {
 
 
                         <div className="content_2">
-                          
+
                             <div className="table_content">
                                 <div className="home_three_dot">
                                     <div className="three_dot">
@@ -169,12 +169,12 @@ export default function Depin() {
                             <div className="svg_container_1">
                                 <div class="hexagon">
 
-                                    <p>figment</p>
+                                    <p>Figment</p>
                                 </div>
 
                                 <div class="hexagon">
 
-                                    <p>p2p</p>
+                                    <p>P2p</p>
                                 </div>
 
 
@@ -182,18 +182,19 @@ export default function Depin() {
                             <div className="svg_container_2">
                                 <div class="hexagon">
 
-                                    <p>chorus one</p>
+                                    <p>Chorus one</p>
                                 </div>
 
                                 <div class="hexagon">
 
 
-                                    <p>neuro DAO</p>
+                                    <p>Neuro DAO</p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+                   
                 </div>
 
             </div>
