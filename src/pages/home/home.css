@@ -23,7 +23,7 @@
 
     position: relative;
     z-index: 700;
-    padding-top: 8rem;
+    padding-top: 6rem;
 }
 .first_part_text span{
     font-size: 5rem;
@@ -179,7 +179,7 @@
     justify-content: center;
   }
   .second_container_text{
-    font-size: min(4vw,55px);
+    font-size: min(3.6vw,48px);
     font-weight: 700;
     text-align: center;
   }

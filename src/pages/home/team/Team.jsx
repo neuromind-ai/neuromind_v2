@@ -22,9 +22,9 @@ export default function Team() {
     return (
         <div className='team_main_container'>
             <div className="sub_team_main_container">
-                <p className='divider'>Our Team</p>
+                <p className='divider'>Innovators Behind Neuromind's Vision...</p>
                 <div className="svg_and_text">
-                    <p>"Neuromind is on mission to provide users with a comprehensive solution for navigating , staking and gaining valuable insights in the ever-expanding DePIN ecosystem..." </p>
+                    <p>"Neuromind is on a mission to provide users with a comprehensive solution for navigating , staking and gaining valuable insights in the ever-expanding DePIN ecosystem..." </p>
 
                 </div>
                 <div>

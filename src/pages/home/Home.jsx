@@ -86,7 +86,7 @@ const Home = () => {
             <div className="Third_container">
                 <div className="Third_content">
                     <div className="Third_headText">
-                        How neuromind can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
+                        How Neuromind can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
                         {/* */}your <br />
                         your DePIN yield?
                     </div>
@@ -102,12 +102,7 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-            <div id='neuromind-team'>
-                <div className="our_team">
-
-                    <Team />
-                </div>
-            </div>
+          
             <motion.div id="request_demo" className="home_contact_container"
 
             >
@@ -182,6 +177,13 @@ const Home = () => {
                         <button>Subscribe</button>
                     </div>
 
+                </div>
+            </div>
+
+            <div id='neuromind-team'>
+                <div className="our_team">
+
+                    <Team />
                 </div>
             </div>
             {/* <div className="company_product_container">
