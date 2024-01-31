@@ -2,6 +2,7 @@
     display: flex;
     padding-top: 6rem;
     background: radial-gradient(circle, rgba(17,60,57,1)0% , rgba(1,2,19,1) 50%);
+    height: 160vh;
 }
 .divider {
     padding: 1.7rem 4rem 1.6rem 15rem;
@@ -15,17 +16,19 @@
 }
 /* // */
 .svg_and_text{
-    padding: 3rem 0rem 0rem 65rem;
+    position: relative;
 }
-/* // */
-.svg_and_text p{
-    letter-spacing: -2px;
+.svg_and_text .team_right_text{
+    width: 30%;
+    position: absolute;
+    right: 0;
     background-color: #113c39;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 23px 34px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
+
 .svg_and_text img img{
     width: 70%;
 
@@ -33,16 +36,20 @@
 .sub_team_main_container{
     display: flex;
     flex-direction: column;
+   width: 100%;
 }
 /* /// */
 .profile_photo{
-    position: relative;
-    top: 70px;
+    /* position: relative;
+    left: -99px; */
     background-image: url("./profile.svg");
     padding: 4rem 7rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 37rem;
+    position: absolute;
+    z-index: 1;
+    top: 0rem;
 }
 
 .profile_photo img{
@@ -72,21 +79,29 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 6rem;
+    position: relative;
+    top: 8rem;
+   
+   
 }
 /* /// */
 .two_profile_data{
     display: flex;
     padding: 1rem 9rem;
+    position: absolute;
+    top: 9rem;
 }
 
 .sub_all_company_img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 1rem;
 }
 .sub_all_company_img img{
-    width: 9%;
-    aspect-ratio: 3/4;
+    width: 20%;
+    aspect-ratio: 5/4;
+    padding: 10px;
 
 }
 /* // */
@@ -95,8 +110,11 @@
     background-image: url("./profile.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 37rem;
+    background-size: 39rem;
     padding: 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
   
 }
 
@@ -104,7 +122,7 @@
 .mayank_svg_and_text_company_1 .all_company_img{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 7px;
     align-items: center;
     justify-content: center;
   
@@ -112,10 +130,9 @@
 
 }
 .mayank_svg_and_text_company_1 .all_company_img p{
-    width: 85%;
+    width: 100%;
     color: #D2D4ED;
-    font-size: 21px;
-    padding-top: 2rem;
+    padding-top: 2.8rem;
 }
 
 /* /// */
@@ -123,25 +140,27 @@
     background-image: url("./profile.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 37rem;
+    background-size: 39rem;
     padding: 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
 }
 
 /* /// */
 .alex_svg_and_text_company_1 .all_company_img{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 7px;
     align-items: center;
     justify-content: center;
   
 
 }
 .alex_svg_and_text_company_1 .all_company_img p{
-    width: 85%;
+    width: 100%;
     color: #D2D4ED;
-    font-size: 21px;
-    padding-top: 2rem;
+    padding-top: 2.8rem;
 }
 
 .img{
@@ -186,12 +205,29 @@
   }
 
   @media (max-width:750px) {
+    .divider{
+        padding: 0rem 1rem;
+    font-size: min(4.6vw,48px);
+    }
+    .team_main_container {
+        height: 265vh;
+    }
     .svg_and_text{
-        padding: 3rem 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        position: unset;
+    }
+    .svg_and_text .team_right_text{
+        width:unset;
+        position: unset;
+        padding: 34px 46px;
     }
     .svg_and_text p{
         border-radius: 20px;
-        padding: 20px 0px 20px 19px;;
+        padding: 20px 0px 20px 19px;
     }
     .profile_photo{
         display: none;
@@ -199,7 +235,11 @@
     .two_profile_data{
         padding: 2rem;
         flex-direction: column;
+        position: unset;
         gap: 4rem;
+    }
+    .two_svg_and_text_company{
+        position: unset;
     }
     .mayank_svg_and_text_company_1{
         display: flex;
@@ -257,5 +297,6 @@
     .alex_svg_and_text_company_1{
         background-size: 400px;
     }
+    
     
   }

@@ -17,7 +17,6 @@ function App() {
           <Route path='/pricing' element={<Pricing />}></Route>
         </Routes>
           <Footer/>
-
       </BrowserRouter>
     </>
   )

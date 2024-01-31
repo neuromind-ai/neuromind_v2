@@ -64,7 +64,6 @@
     transform-origin: center;
     transition: transform 0.8s ease;
     width: 75%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,10 +135,10 @@
     opacity: 0.4;
     }
     .first_part{
-        padding-top: 14rem;
-    padding-bottom: 14rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+        padding-top: 17rem;
+        padding-bottom: 23rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
     .first_part_text{
         padding-top: 5rem;
@@ -191,6 +190,14 @@
   @media (max-width:750px) {
     .second_container{
         padding: 0;
+    }
+    .second_container_text{
+        font-size: min(4.6vw,48px);
+    }
+    .depin_effort{
+        font-size: 0.9rem;
+        padding: 1rem 5rem;
+        text-align: center;
     }
    
     
@@ -291,6 +298,13 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .Third_container{
+        padding: 2rem 1rem 1rem 1rem;
+    
+    }
+    .Third_headText{
+        font-size: min(4.6vw,48px);
+    }
    
     .Third_card li {
         
@@ -425,6 +439,10 @@
     }
     .contact_text{
         text-align: center;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        font-size: min(4.6vw,48px);
+        line-height: normal;
     }
     .contact_form input{
         min-width: 7rem;

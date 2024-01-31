@@ -12,6 +12,9 @@ export default function Depin() {
                 {/* <Sidebar /> */}
                 <div className="depin_container">
                     <div className="three_content">
+                        <div className='ai_tokens'>
+
+                      
                         <div className="content_1">
                             <div className="sub_content_1">
                                 {/* <div className="ai_token"> */}
@@ -55,6 +58,8 @@ export default function Depin() {
 
 
                         </div>
+                        <span>AI Tokens </span> 
+                        </div>
                         <div className="svg-container-1">
 
                             <svg width="60" height="23" viewBox="0 0 60 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +73,9 @@ export default function Depin() {
                             </svg>
                         </div>
 
+                        <div className='user_friendly'>
 
+                       
                         <div className="content_2">
 
                             <div className="table_content">
@@ -152,6 +159,8 @@ export default function Depin() {
                             </div>
 
                         </div>
+                        <span>User-Friendly Interface</span>
+                        </div>
                         <div className="svg-container-1">
 
                             <svg width="60" height="23" viewBox="0 0 60 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,6 +174,9 @@ export default function Depin() {
                             </svg>
                         </div>
 
+                      <div className='partner_validators'>
+
+                     
                         <div className="content_3">
                             <div className="svg_container_1">
                                 <div class="hexagon">
@@ -192,6 +204,8 @@ export default function Depin() {
                                 </div>
 
                             </div>
+                        </div>
+                        <span>Partner validators +NEURO DAO’s nodes</span>
                         </div>
                     </div>
                    

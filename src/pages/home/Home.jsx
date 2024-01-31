@@ -179,13 +179,12 @@ const Home = () => {
 
                 </div>
             </div>
-
-            <div id='neuromind-team'>
-                <div className="our_team">
+              <div>
 
                     <Team />
-                </div>
-            </div>
+              </div>
+         
+
             {/* <div className="company_product_container">
                 <div className="neuromind">neuromind</div>
                 <div className="developer_container">
