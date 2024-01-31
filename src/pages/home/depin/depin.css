@@ -324,6 +324,9 @@ tr:last-child td {
     .content_3{
         height: unset;
     }
+    .partner_validators{
+        gap: 5rem;
+    }
     .table_content{
         padding: 1rem;
         min-width: 364px;
