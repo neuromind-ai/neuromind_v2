@@ -51,6 +51,23 @@
     .header_content{
         display: none;
     }
+    .header_list_container{
+        
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        background: red;
+        left: 0;
+        top: 0;
+        width: 100%;
+        gap: 0rem;
+    }
+    .header_list_container li{
+        padding: 20px;
+        border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    }
     .logo{
         justify-content: space-between;
         width: 100%;

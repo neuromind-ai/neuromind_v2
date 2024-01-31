@@ -233,7 +233,7 @@
         display: none;
     }
     .two_profile_data{
-        padding: 2rem;
+        padding: 2rem 0rem;
         flex-direction: column;
         position: unset;
         gap: 4rem;
