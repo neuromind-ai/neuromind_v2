@@ -74,7 +74,7 @@ const Home = () => {
                         <br />
                         Protocol For AI Networks</span>
                     <p>Empowering AI communities with decentralised staking infrastructure </p>
-                    <a style={{ color: "inherit", textDecoration: "none" }} href="#request_demo"> <button style={{ cursor: "pointer" }}> request demo</button></a>
+                    {/* <a style={{ color: "inherit", textDecoration: "none" }} href="#request_demo"> <button style={{ cursor: "pointer" }}> request demo</button></a> */}
                 </div>
             </div>
 
@@ -151,19 +151,19 @@ const Home = () => {
                     </a>
 
                     {/* Discord */}
-                    <a href="https://www.discord.com" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <FaDiscord />
                     </a>
 
 
                     {/* Telegram */}
-                    <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <BiLogoTelegram />
                     </a>
 
 
                     {/* LinkedIn */}
-                    <a href="https://www.linkedin.com/in/mayank-mahawar-46032a4b/" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <FaLinkedinIn />
 
                     </a>
