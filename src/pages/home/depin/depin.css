@@ -1,7 +1,7 @@
 .depin_main_container {
     display: flex;
     padding-top: 6rem;
-    background: radial-gradient(circle, rgba(17, 60, 57, 1) 0%, rgba(1, 2, 19, 1) 50%);
+    /* background: radial-gradient(circle, rgba(17, 60, 57, 1) 0%, rgba(1, 2, 19, 1) 50%); */
     padding-bottom: 10rem;
 }
 .depin_main_container .depin_effort{
@@ -314,8 +314,8 @@ tr:last-child td {
         
     }
     .three_content .svg_1 p{
-        height: 72px;
-        width: 92px;
+        height: 74px;
+        width: 71px;
     }
     .content_2{
         background-color: transparent;
@@ -325,17 +325,18 @@ tr:last-child td {
         height: unset;
     }
     .partner_validators{
-        gap: 5rem;
+        gap: 3rem;
     }
     .table_content{
         padding: 1rem;
-        min-width: 364px;
+       
     }
     table{
         height: 220px;
     }
     th, td{
         white-space: normal;
+        padding: 3px;
     }
 
     .svg-container-1 svg{

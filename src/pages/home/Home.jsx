@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import data from './/thirdcontainer.json'
 import Depin from './depin/Depin';
 import Team from './team/Team'
+import StakeNeuro from './stakeneuro/StakeNeuro'
 
 
 
@@ -102,7 +103,8 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-          
+            
+            
             <motion.div id="request_demo" className="home_contact_container"
 
             >

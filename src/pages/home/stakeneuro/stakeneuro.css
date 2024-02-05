@@ -1,0 +1,241 @@
+.stake_main_container {
+    display: flex;
+    gap: 10rem;
+    padding: 6rem;
+    background: radial-gradient(circle, rgba(17, 60, 57, 1)0%, rgba(1, 2, 19, 1) 50%);
+
+}
+.stakeneuro_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.stake_topic {
+    
+    padding: 1.7rem 4rem 1.6rem 5rem;
+    font-size: min(3.6vw,48px);
+    
+}
+
+
+
+.three_content_stake {
+    position: relative;
+    display: flex;
+    padding-top: 6rem;
+
+}
+
+.sub_three_hex_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.neuro_holder_hex_content {
+    text-align: center;
+   
+    
+}
+
+.gray_svg_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gray_svg_1 img{
+    position: absolute;
+    width: 23%;
+}
+ .gray_svg_1 p{
+    padding: 5px;
+    font-size: 12px;
+    width: 61%;
+   
+}
+
+
+
+ .gray_svg_2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gray_svg_2 img{
+    position: absolute;
+    width: 16%;
+}
+ .gray_svg_2 p{
+    font-size: 12px;
+    width: 62%;
+    text-align: center;
+}
+.gray_svg_3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+.gray_svg_3 img{
+    position: absolute;
+    width: 25%;
+}
+.gray_svg_3 p{
+    font-size: 13px;
+    width: 45%;
+}
+
+
+
+.two_arrow_row .two_arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+}
+.two_arrow_row svg{
+    width: 75%;
+    height: 21px;
+}
+
+.two_arrow_column {
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.two_hex {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.hexagon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98px;
+    height: 46.2px;
+    background-color: #0b5b47;
+    position: relative;
+    box-shadow: 0 0 10px 1px rgba(11, 91, 75, 0.5);
+    text-align: center;
+}
+
+.hexagon2:before,
+.hexagon2:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon2:before {
+    top: -39.6px;
+    border-bottom: 40.6px solid #0b5b47; 
+}
+
+.hexagon2:after {
+    bottom: -39.6px; 
+    border-top: 40.6px solid #0b5b47; 
+}
+
+
+.sub_two_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub_two_contet_text{
+    text-align: center;
+    width: 67px;
+}
+.two_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.sub_three_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.sub_three_content .gray_svg_sub_three_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.gray_svg_sub_three_content img{
+    position: absolute;
+    width: 18%;
+}
+
+.sub_three_content .gray_svg_sub_three_content p {
+    width: 60%;
+    font-size: 12px;
+}
+
+.arrow_vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.arrow_vertical svg{
+        width: 34%;
+   
+}
+
+
+/* Apply styles to the SVG container */
+.svg-container {
+   
+    width: 75%;
+    display: flex;
+}
+.svg-container svg{
+    padding-right: 75px;
+}
+
+
+@media (max-width:750px) {
+    .stake_main_container{
+        padding: 0;
+    }
+    .three_content_stake{
+        flex-direction: column;
+    }
+    
+}
