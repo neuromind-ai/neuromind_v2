@@ -205,7 +205,7 @@ export default function Depin() {
 
                             </div>
                         </div>
-                        <span>Partner validators +NEURO DAO’s nodes</span>
+                        <span style={{paddingTop:"14px",whiteSpace:"nowrap"}}>Partner validators +NEURO DAO’s nodes</span>
                         </div>
                     </div>
                    
