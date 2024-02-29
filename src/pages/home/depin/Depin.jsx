@@ -105,7 +105,7 @@ export default function Depin() {
                                     </div>
 
 
-                                    <p className='table_topic'>Neuromind Staking</p>
+                                    <p className='table_topic'>Sigmoid Staking</p>
                                 </div>
 
                                 <table>

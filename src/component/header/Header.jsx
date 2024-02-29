@@ -1,39 +1,28 @@
 import React from 'react'
 import Lazyloader from '../lazyloader/Lazyloader'
-import './header.css'
 import { CiMenuFries } from "react-icons/ci";
 import { Link } from 'react-router-dom'
 
-
-
 const Header = () => {
     return (
-
-
-        <div className='header_container'>
-           
-                <div className="sub_header_container">
-
-                    <div className="logo">
-                        {/* <Lazyloader src="/saurav" alt="logo-image" /> */}
-                        <p>Neuromind</p>
-                       <div className="hambergermenu"> <CiMenuFries/></div>
-                    </div>
-                    <div className="header_content">
-                        <ul className='header_list_container'>
-                            <li><a href="#neuromind-team">About us</a></li>
-                            <li><a href="">doc</a></li>
-                            <li><a href="">blog</a></li>
-                            {/* <li><Link to="/pricing">pricing</Link></li> */}
-                            <li><a href="#contact">contact us</a></li>
-                        </ul>
-
-                    </div>
+        <div className='border-b-3 border-black h-16 fixed z-1000 bg-header-background-color md:px-36 text-lg   w-full'>
+            <div className="flex items-center px-6 md:px-9 h-full">
+                <div className="flex w-full justify-between  items-center">
+                    {/* <Lazyloader src="/saurav" alt="logo-image" /> */}
+                    <p className="text-white text-3xl ">Sigmoid</p>
+                    <div className="md:hidden ml-4"><CiMenuFries/></div>
                 </div>
-          
-
+                <div className="hidden md:block">
+                    <ul className='flex gap-6'>
+                        <li><a href="#neuromind-team" className="text-white uppercase whitespace-nowrap">About us</a></li>
+                        <li><a href="" className="text-white uppercase">doc</a></li>
+                        <li><a href="" className="text-white uppercase">blog</a></li>
+                        {/* <li><Link to="/pricing" className="text-white uppercase">pricing</Link></li> */}
+                        <li><a href="#contact" className="text-white uppercase whitespace-nowrap">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
     )
 }
 

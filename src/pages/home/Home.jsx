@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
-import ContentWrapper from '../../component/contentwrapper/ContentWrapper'
 import './home.css'
-import { FaDiscord, FaInbox, FaSubscript, FaTwitter } from "react-icons/fa6";
-import { BiLogoTelegram, BiMessage } from "react-icons/bi";
+import { FaDiscord, FaTwitter } from "react-icons/fa6";
+import { BiLogoTelegram } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa6";
-import { MdOutlineUnsubscribe } from "react-icons/md";
+import { MdOutlineAlternateEmail,MdOutlineUnsubscribe } from "react-icons/md";
 import { motion } from 'framer-motion';
 import data from './/thirdcontainer.json'
-import Depin from './depin/Depin';
 import Team from './team/Team'
-import StakeNeuro from './stakeneuro/StakeNeuro'
+import axios from 'axios';
+
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -18,6 +20,58 @@ import StakeNeuro from './stakeneuro/StakeNeuro'
 
 
 const Home = () => {
+    const [inputemail,setInputEmail]=useState("");
+    const [validEmail,setEmailValidation]=useState(true);
+    const port = import.meta.env.VITE_PORT;
+
+    const isValidEmail = ()=> {
+        const re =/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+        return re.test(inputemail);
+    }
+
+    const handleSubscribeButton = async () => {
+        if (!isValidEmail() || !inputemail.trim()) {
+          setEmailValidation(false);
+        } else {
+          setEmailValidation(true);
+          setInputEmail("");
+      
+          try {
+            const response = await axios.post(`${port}/api/subscriber`, {
+              email: inputemail
+            }, {
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            });
+      
+            const data = response.data;
+            // console.log(data);
+             if(data.message === "Succesfully Subscribed !" ){
+                toast("Succesfully Subscribed !")
+
+             }else if(data.message === "Already Subscribed !") {
+                toast("Already Subscribed !")
+
+             }else{
+                toast("Error !");
+             }
+          } catch (error) {
+            console.error('Subscription error:', error);
+            // Handle subscription error
+            toast("Error !");
+          }
+        }
+      };
+      
+
+
+      
+ 
+   
+  
+    
+
 
 
 
@@ -78,16 +132,16 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="second_container">
-                <p className='second_container_text'>Let <span style={{ color: "#D2926E" }}> Neuromind</span>  guide you in spinning up nodes for AI Projects (DePIN)</p>
+            {/* <div className="second_container">
+                <p className='second_container_text'>Let <span style={{ color: "#D2926E" }}> Sigmoid</span>  guide you in spinning up nodes for AI Projects (DePIN)</p>
                 <p className='depin_effort'>Effortlessly navigate risk-adjusted exposure to AI projects</p>
                 <Depin />
 
-            </div>
+            </div> */}
             <div className="Third_container">
                 <div className="Third_content">
                     <div className="Third_headText">
-                        How Neuromind can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
+                        How Sigmoid can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
                         {/* */}your <br />
                         your DePIN yield?
                     </div>
@@ -113,7 +167,7 @@ const Home = () => {
                 </div>
                 <div className="contact_form">
                     <form onSubmit={handleSubmit}>
-                        <h2>Request Demo</h2>
+                        <h2>Request </h2>
                         <label>
                             Name:
                             <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} />
@@ -167,6 +221,10 @@ const Home = () => {
                         <FaLinkedinIn />
 
                     </a>
+                    <a href="mailto:" target="_blank" rel="noopener noreferrer">
+                        <MdOutlineAlternateEmail/>
+
+                    </a>
 
                 </div>
                 <div className="message_email">
@@ -174,9 +232,19 @@ const Home = () => {
                         <p>Never miss an update <MdOutlineUnsubscribe /></p>
                         <p>Best way to stay connected with our progress.</p>
                     </div>
+                    <div>
+
+                     <p style={{color:"red",fontSize:"15px",textAlign:"center",letterSpacing:"2px"}}>{ validEmail ? "":"Please type valid email !"}</p>
                     <div className="email_input">
-                        <input type="text" />
-                        <button>Subscribe</button>
+                        <input type="text"
+                        value={inputemail}
+                        onChange={(e)=>setInputEmail(e.target.value)}
+                        placeholder='Type your email'
+                        
+                        />
+                        <button className='hover:bg-slate-900 ' onClick={() => handleSubscribeButton()}>Subscribe</button>
+
+                    </div>
                     </div>
 
                 </div>
@@ -188,7 +256,7 @@ const Home = () => {
          
 
             {/* <div className="company_product_container">
-                <div className="neuromind">neuromind</div>
+                <div className="neuromind">Sigmoid</div>
                 <div className="developer_container">
 
                     <div className="company">
@@ -220,6 +288,7 @@ const Home = () => {
             </div> */}
 
             {/* </ContentWrapper > */}
+            <ToastContainer />
         </>
     )
 }
