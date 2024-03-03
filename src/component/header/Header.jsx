@@ -9,7 +9,7 @@ const Header = () => {
             <div className="flex items-center px-6 md:px-9 h-full">
                 <div className="flex w-full justify-between  items-center">
                     {/* <Lazyloader src="/saurav" alt="logo-image" /> */}
-                    <p className="text-white text-3xl ">Sigmoid</p>
+                    <p className="text-white text-3xl ">Neuromind</p>
                     <div className="md:hidden ml-4"><CiMenuFries/></div>
                 </div>
                 <div className="hidden md:block">

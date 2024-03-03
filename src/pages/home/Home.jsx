@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import data from './/thirdcontainer.json'
 import Team from './team/Team'
 import axios from 'axios';
+import Depin from './depin/Depin'
 
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -132,16 +133,16 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* <div className="second_container">
-                <p className='second_container_text'>Let <span style={{ color: "#D2926E" }}> Sigmoid</span>  guide you in spinning up nodes for AI Projects (DePIN)</p>
+            <div className="second_container">
+                <p className='second_container_text'>Let <span style={{ color: "#D2926E" }}> Neuromind</span>  guide you in spinning up nodes for AI Projects (DePIN)</p>
                 <p className='depin_effort'>Effortlessly navigate risk-adjusted exposure to AI projects</p>
                 <Depin />
 
-            </div> */}
+            </div>
             <div className="Third_container">
                 <div className="Third_content">
                     <div className="Third_headText">
-                        How Sigmoid can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
+                        How Neuromind can <span style={{ color: "#5BBEA6" }}>enhance</span>{" "}
                         {/* */}your <br />
                         your DePIN yield?
                     </div>
@@ -156,6 +157,15 @@ const Home = () => {
                         ))}
                     </ul>
                 </div>
+
+
+
+
+
+
+
+
+
             </div>
             
             
@@ -242,7 +252,7 @@ const Home = () => {
                         placeholder='Type your email'
                         
                         />
-                        <button className='hover:bg-slate-900 ' onClick={() => handleSubscribeButton()}>Subscribe</button>
+                        <button className='hover:bg-slate-900 ' >Subscribe</button>
 
                     </div>
                     </div>
@@ -256,7 +266,7 @@ const Home = () => {
          
 
             {/* <div className="company_product_container">
-                <div className="neuromind">Sigmoid</div>
+                <div className="neuromind">Neuromind</div>
                 <div className="developer_container">
 
                     <div className="company">
